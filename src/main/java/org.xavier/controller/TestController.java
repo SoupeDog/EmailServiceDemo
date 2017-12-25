@@ -3,11 +3,9 @@ package org.xavier.controller;
 import org.apache.commons.mail.EmailException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import org.xavier.EmailEmitter;
+import org.xavier.manager.EmailEmitter;
 import org.xavier.config.EmailProperties;
 import org.xavier.domain.SendEmailBO;
-
-import java.util.Map;
 
 /**
  * 描述信息：<br/>
