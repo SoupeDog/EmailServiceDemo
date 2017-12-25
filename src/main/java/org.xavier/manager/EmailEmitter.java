@@ -21,7 +21,7 @@ public class EmailEmitter {
     HtmlEmail htmlEmail;
 
 
-    public Boolean send(String subject, String content, String from, List<String> to) throws EmailException {
+    public void send(String subject, String content, String from, List<String> to) throws EmailException {
         htmlEmail.setCharset("utf-8");
         htmlEmail.setFrom(from);
         for (String temp : to) {
@@ -30,7 +30,6 @@ public class EmailEmitter {
         htmlEmail.setSubject(subject);
         htmlEmail.setMsg(content);
         htmlEmail.send();
-        return true;
     }
 
 
